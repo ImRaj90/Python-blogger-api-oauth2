@@ -29,7 +29,7 @@ def get_pages_from_jobs():
     thisuser = users.get(userId='self').execute()
     print('This user\'s display name is: %s' % thisuser['displayName'])
     page=service.pages()
-##    onepage=page.get(blogId='8025517199486826918',pageId='6211901358272467149').execute()
+##    onepage=page.get(blogId='xxxxxxxx',pageId='xxxxx').execute()
 ##    print("this will show specific onepage", onepage)
 ##    cities=['united states','India','Aus','brazil']
 ##    for item in cities:
@@ -38,12 +38,12 @@ def get_pages_from_jobs():
 ##            "content": "<div dir=\"ltr\" style=\"text-align: left;\" trbidi=\"on\">\nEspeciallySports is a sports news portal aims at bringing the latest sports news for the fans that cover MMA, WWE, UFC, Cricket, Football, etc&nbsp;</div>\n",
 ##        "title": title
 ##        }
-##        respost=page.insert(blogId='8025517199486826918',body=payload,isDraft=False).execute() #publishing the new post
+##        respost=page.insert(blogId='xxxxx',body=payload,isDraft=False).execute() #publishing the new post
 ##        print("printing the page id:",respost['id'])
     payload={
         "content": "<div dir=\"ltr\" style=\"text-align: left;\" trbidi=\"on\">\nEspeciallySports is a sports news portal aims at bringing the latest sports news for the fans that cover MMA, WWE, UFC, Cricket, Football, etc&nbsp;</div>\n",
         "title": "ttile has been changed to uk"
         }
-    respost=page.update(blogId='8025517199486826918', pageId='846522088284828282', body=payload, publish=True).execute() #updating the existing post/page
+    respost=page.update(blogId='xxxxxx', pageId='xxxxxx', body=payload, publish=True).execute() #updating the existing post/page
     
 get_pages_from_jobs()
