@@ -1,5 +1,9 @@
 # Python-blogger-api-oauth2
 Working with Blogger API v3 using python for beginners via Oauth 2.0
+
+Referral to the below link, as it contains with images:
+https://www.topzenith.com/2020/05/working-with-blogger-api-v3-using-python-for-beginners-via-Oauth-2.0.html
+
 Hi Guys,
 
 I’m going to show you how to connect Google blogger API using python. I had a requirement of creating more than 100 plus blog pages by duplicating existing a single blog page. Basically,
